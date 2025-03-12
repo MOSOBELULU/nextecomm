@@ -4,6 +4,7 @@ const config = require("../config");
 const NextConfig = {
     env: {
         DB_URI: config.DB_URI,
+        API: config.API,
     }
 }
 module.exports = NextConfig
