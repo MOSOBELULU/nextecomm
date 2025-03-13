@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { useRouter, useSearchParams, useSearchParams } from "next/navigation";
+import { useRouter,  useSearchParams } from "next/navigation";
 import {signIn} from "next-auth/react"
-import { SearchParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime";
+
 
 export default function Login() {
   const [email, setEmail] = useState("");
