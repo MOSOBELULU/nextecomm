@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams, useSearchParams } from "next/navigation";
 import {signIn} from "next-auth/react"
+import { SearchParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -10,6 +11,8 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
 
   const router = useRouter()
+  const searchParams = useSearchParams();
+  const callbackUrl = searchParams.get('callbackUrl') || "/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,7 +30,8 @@ export default function Login() {
             setLoading(false);
         } else {
             toast.success("Logged in successsfully");
-            router.push("/");
+            //router.push("/");
+            router.push(callbackUrl)
         }
      
     } catch (err) {
