@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
+
 export default function TopNav() {
     const {data, status
      } = useSession()
@@ -15,7 +16,7 @@ export default function TopNav() {
                 <Link href='/dashboard/user' className='nav-link'>
                 {data?.user?.name}
                 </Link>
-                <a href='/login' className='nav-link' onClick={() => signOut({callbackUrl: "/login"})}>
+                <a className='nav-link pointer' onClick={() => signOut({callbackUrl: "/login"})}>
                 Logout
                 </a>
                 </>

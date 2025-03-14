@@ -16,11 +16,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// export const metadata = {
-//   title: "nextecomm",
-//   description: "created using NextJs",
-// };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -31,7 +26,6 @@ export default function RootLayout({ children }) {
         {children}
       </body>
       </SessionProvider>
-      
     </html>
   );
 }
