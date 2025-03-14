@@ -7,7 +7,6 @@ export default function UserDashboard() {
                         Dashboard
                     </p>
                     <hr/>
-                    ...
                 </div>
             </div>
         </div>
