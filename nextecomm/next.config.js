@@ -1,4 +1,4 @@
-// const config = require("./config");
+
 
 /** @type {import('next').NextConfig} */
 const NextConfig = {
