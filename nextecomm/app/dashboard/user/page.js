@@ -7,6 +7,7 @@ export default function UserDashboard() {
                         Dashboard
                     </p>
                     <hr/>
+                    <h1>user profile</h1>
                 </div>
             </div>
         </div>
