@@ -9,9 +9,9 @@ export default function TopNav() {
 
     return (
         <nav className="nav shadow p-2 justify-content-between mb-3">
-            <Link href='/' className="nav-link">  🛒ecomm</Link>
-            <Link href='/shop' className="nav-link d-flex ">Shop</Link>
-            <Link href='/shop' className="nav-link d-flex ">🛒My Cart</Link>
+            <Link href='/' className="nav-link">  ecomm</Link>
+            <Link href='/shop' className="nav-link d-flex ">🛒Shop</Link>
+     
 
             {status === "authenticated" ? (
                 <>
